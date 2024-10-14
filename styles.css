@@ -12,24 +12,6 @@
   text-decoration: none;
 }
 
-@font-face {
-  font-family: "Open Sans";
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Open Sans";
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Roboto Slab";
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 :root {
   --background-color: #000000;
   --surface-color: #121212;
@@ -60,12 +42,6 @@ body {
   line-height: 1.6;
   font-size: 18px;
   transition: background-color var(--transition-speed) ease;
-}
-
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -115,12 +91,10 @@ a:hover, a:focus {
 
 header {
   position: relative;
+  background: transparent;
   color: #000000;
   line-height: 1.5em;
   padding: 0 20px;
-}
-header .wrapper {
-  padding: 25px 0 20px 0;
 }
 header a {
   display: inline-block;
@@ -129,7 +103,8 @@ header p a {
   text-decoration: underline wavy;
 }
 header nav {
-  display: inline-block;
+  display: flex;
+  background-color: #000000;
   border-radius: 10px;
   margin-top: 18px;
   overflow: hidden;
@@ -139,13 +114,13 @@ header nav li {
 }
 header nav a {
   display: block;
-  color: #ff77ff;
+  color: #708090;
   padding: 0 10px;
   line-height: 30px;
 }
 header nav a:hover, li.selected header nav a {
   color: #fff;
-  background-color: #ff77ff;
+  background-color: SteelBlue;
 }
 
 main {
@@ -239,12 +214,10 @@ main {
 }
 
 footer {
-  background-color: var(--surface-color);
   color: var(--text-color-secondary);
   padding: 2rem 0;
   text-align: center;
   margin-top: 2rem;
-  border-top: 1px solid var(--primary-color);
 }
 
 .visually-hidden {
@@ -435,54 +408,4 @@ select:focus {
     max-width: 100%;
     margin: 20px 0;
   }
-}
-img {
-  position: fixed;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
-/* Add some content at the bottom of the video/page */
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-}
-
-.variant-0 {
-  background-color: #66293c;
-}
-
-.variant-1 {
-  background-color: #913e37;
-}
-
-.variant-2 {
-  background-color: #ca7618;
-}
-
-.variant-3 {
-  background-color: #a38138;
-}
-
-.variant-4 {
-  background-color: #2f7176;
-}
-
-.variant-5 {
-  background-color: #246089;
-}
-
-.variant-6 {
-  background-color: #498840;
-}
-
-.variant-7 {
-  background-color: #484781;
 }
