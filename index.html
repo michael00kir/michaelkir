@@ -355,6 +355,32 @@
                 font-size: 0.9rem;
             }
         }
+        
+        .download-resume {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: #1a1a1a;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.download-button:hover {
+  background-color: #333333;
+}
+
+.download-button svg {
+  width: 20px;
+  height: 20px;
+}
     </style>
 </head>
 <body>
@@ -385,6 +411,16 @@
                         07787181862
                     </a>
                 </div>
+                <div class="download-resume">
+                    <a href="MichaelKirCV.pdf" download="MichaelKirCV.pdf" class="download-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                      </svg>
+                      Download Resume
+                    </a>
+                  </div>
             </header>
 
             <nav class="nav">
